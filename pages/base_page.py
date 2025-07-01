@@ -26,6 +26,9 @@ class BasePage():
         button = self.browser.find_element(*BasePageLocators.BUTTON_SEE_BASKET)
         button.click()
 
+    def should_be_basket_button(self):
+        assert self.is_element_present(*BasePageLocators.BUTTON_SEE_BASKET), "Basket button is not presented"
+
     def is_element_present(self, how, what):
         try:
             self.browser.find_element(how, what)

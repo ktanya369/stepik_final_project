@@ -10,6 +10,7 @@ class BasePageLocators():
 
 class BasketPageLocators():
     MESSAGE_EMPTY_BASKET = (By.CSS_SELECTOR, "#content_inner")
+    PRODUCT_TO_BASKET = (By.CSS_SELECTOR, "h2.col-sm-6.h3")
 
 class LoginPageLocators():
     FORM_REG = (By.CSS_SELECTOR, "#register_form")
